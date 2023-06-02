@@ -1,4 +1,4 @@
-# FaceRecognitionSystem
+# FaceRecognition
  
 Facial recognition is an important task in computer vision, with many applications such as security, human-computer interaction, and social media. In this project, we present Facial recognition using Python, OpenCV and Haar Cascades. 
 
