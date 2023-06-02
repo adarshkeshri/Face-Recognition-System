@@ -1,2 +1,3 @@
-Main Code rests here
-use main.py to run the GUI APP
+Main Code rests here.
+
+Use Main.py to run the GUI APP.
