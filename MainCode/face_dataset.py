@@ -3,7 +3,7 @@ import os
 
 def dataset(name):
 
-    os.chdir('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/Dataset')
+    os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset')
 
     if not os.path.exists(name):
         os.mkdir(name)
@@ -22,7 +22,7 @@ def dataset(name):
             break
         cv.imshow("Video Window",frame)
 
-        cv.imwrite('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/Dataset/'+name+'/img'+str(count)+'.png',frame)
+        cv.imwrite('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/'+name+'/img'+str(count)+'.png',frame)
 
         count=count+1
         if cv.waitKey(1) == ord('q'):

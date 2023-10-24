@@ -6,14 +6,14 @@ def train():
     
     names = []
 
-    with open(r'C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/Dataset/name_list.txt', 'r') as fp:
+    with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:
         for line in fp:
             x = line[:-1]
             names.append(x)
 
-    DIR = r'C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/Dataset'
+    DIR = r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset'
 
-    haar_cascade = cv.CascadeClassifier('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/MainCode/haar_face.xml')
+    haar_cascade = cv.CascadeClassifier('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/haar_face.xml')
 
     features = []
     labels = []
@@ -47,7 +47,7 @@ def train():
     #train the recognizer
 
     face_recognizer.train(features, labels)
-    os.chdir('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/MainCode')
+    os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode')
     face_recognizer.save('face_trainer.yml')
 
     np.save('features.npy', features)

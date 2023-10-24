@@ -3,15 +3,15 @@ import sys
 def face_recog():
     people = []
 
-    with open(r'C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/Dataset/name_list.txt', 'r') as fp:
+    with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:
         for line in fp:
             x = line[:-1]
             people.append(x)
 
-    haar_cascade = cv.CascadeClassifier('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/MainCode/haar_face.xml')
+    haar_cascade = cv.CascadeClassifier('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/haar_face.xml')
 
     face_recognizer = cv.face.LBPHFaceRecognizer_create()
-    face_recognizer.read('C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/MainCode/face_trainer.yml')
+    face_recognizer.read('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/face_trainer.yml')
 
     video_capture = cv.VideoCapture(0)
 

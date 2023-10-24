@@ -42,7 +42,7 @@ class Ui_Main(object):
         self.label = QtWidgets.QLabel(self.frame)
         self.label.setGeometry(QtCore.QRect(10, 10, 161, 181))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("C:/Users/KIIT/Desktop/VSCoding/Projects/Face Recognition System/images.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/images.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.Register_Face = QtWidgets.QPushButton(self.centralwidget, clicked = lambda: self.open_form())
