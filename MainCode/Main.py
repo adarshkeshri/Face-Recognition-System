@@ -3,7 +3,6 @@ import name
 import face_train
 import face_recog
 
-
 class Ui_Main(object):
     def open_form(self):
         self.window = QtWidgets.QWidget()
