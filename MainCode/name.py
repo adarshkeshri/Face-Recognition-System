@@ -1,7 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import face_dataset
 
-
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
