@@ -70,8 +70,10 @@ Before using this system, ensure you have the following installed:
    - `pip install os-sys`
    - `pip install PyQt5`
      ```
-     pip install requests
-
+     pip install opencv-contrib-python
+     pip install numpy
+     pip install os-sys
+     pip install PyQt5
      ```
 
 5. Run `Main.py` to start the face recognition system.
