@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/adarshkeshri/Face-Recognition-System.svg)](https://github.com/adarshkeshri/Face-Recognition-System/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/adarshkeshri/Face-Recognition-System.svg)](https://github.com/adarshkeshri/Face-Recognition-System/network)
-[![GitHub license](https://img.shields.io/github/license/adarshkeshri/Face-Recognition-System.svg)](https://github.com/adarshkeshri/Face-Recognition-System/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/adarshkeshri/Face-Recognition-System.svg)](https://github.com/adarshkeshri/Face-Recognition-System/blob/master/LICENSE)
 
 A real-time Face Recognition System implemented in Python using OpenCV and Haar Cascade files.
 
