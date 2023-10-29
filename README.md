@@ -51,7 +51,7 @@ Before using this system, ensure you have the following installed:
 
      - `Main.py`: You need to specify a different path for the front end pic provided in the repository, you can change it by modifying the `        self.label.setPixmap(QtGui.QPixmap("C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/images.png"))` line.
 
-     - `face_dataset.py`: To specify the folder where you want to store captured face images,you can change it by modifying the `os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset')` and `cv.imwrite('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/'+name+'/img'+str(count)+'.png',frame)`.
+     - `face_dataset.py`: To specify the folder where you want to store captured face images,you can change it by modifying the os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset') and cv.imwrite('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/'+name+'/img'+str(count)+'.png',frame).
        
      - `face_recog.py`: Update the following lines in the code to use the `haar_face.xml`,
        `with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:`,
