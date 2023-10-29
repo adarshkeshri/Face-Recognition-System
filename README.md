@@ -49,17 +49,27 @@ Before using this system, ensure you have the following installed:
 
    - Open the following files in a text editor and update the file paths where necessary:
 
-     - `Main.py`: If you need to specify a different path for the Haar Cascade XML file, you can change it by modifying the `face_cascade.load('path_to_haar_face.xml')` line.
+     - `Main.py`: You need to specify a different path for the front end pic provided in the repository, you can change it by modifying the `        self.label.setPixmap(QtGui.QPixmap("C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/images.png"))` line.
 
-     - `face_dataset.py`: Update the `data_folder` variable to specify the folder where you want to store captured face images.
+     - `face_dataset.py`: To specify the folder where you want to store captured face images,you can change it by modifying the `os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset')` and `cv.imwrite('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/'+name+'/img'+str(count)+'.png',frame)`.
+       
+     - `face_recog.py`: Update the following lines in the code to use the `haar_face.xml`,
+       `with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:`,
+       `haar_cascade = cv.CascadeClassifier('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/haar_face.xml')`,
+       `face_recognizer.read('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/face_trainer.yml')`.
 
-     - `face_train.py`: Modify the `recognizer.write('face_trainer.yml')` line to set the path where the trained model should be saved.
+     - `face_train.py`: Update the following lines in the code to use the `face_trainer.yml` by reading the names from `name_list.txt`,
+       `with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:`,
+       `DIR = r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset'`,
+       `haar_cascade = cv.CascadeClassifier('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode/haar_face.xml')`,
+       `os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode')`.
 
-   - Additionally, ensure that the script's dependencies are correctly installed on your system, especially the OpenCV library.
+4. Before running the scripts, you need to install the necessary libraries. You can do this using `pip`:
+   - `pip install opencv-contrib-python`
 
-4. Run `Main.py` to start the face recognition system.
+5. Run `Main.py` to start the face recognition system.
 
-5. The system will utilize your webcam to detect and recognize faces in real-time.
+6. The system will utilize your webcam to detect and recognize faces in real-time.
    
 
 ## Training the Model
