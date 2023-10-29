@@ -19,7 +19,7 @@ A real-time Face Recognition System implemented in Python using OpenCV and Haar 
 - [License](#license)
 
 ## About
-This repository contains a real-time Face Recognition System implemented in Python. It uses OpenCV and Haar Cascade files to detect and recognize faces in real-time using a webcam. The system achieves an accuracy of about 90% on the provided dataset.
+The Face Recognition System is a Python-based real-time facial recognition application that utilizes the power of OpenCV and Haar Cascade files to detect and identify faces through a webcam. With an accuracy rate of approximately 90% on the provided dataset, this system has been designed for various applications, from security and access control to personalized user experiences. The project aims to make face recognition technology accessible and easy to implement in diverse contexts.
 
 ## Repository Files
 - **Main.py**: The main script to run the face recognition system.
@@ -40,13 +40,27 @@ Before using this system, ensure you have the following installed:
 - Webcam (for real-time recognition)
 
 ## How to Use
+
 1. Clone this repository to your local machine or download the code.
 
 2. Make sure all the required files are in the same directory.
 
-3. Run `Main.py` to start the face recognition system.
+3. Before running the scripts, you may need to customize the file paths according to your system. Here's how you can do that:
 
-4. The system will utilize your webcam to detect and recognize faces in real-time.
+   - Open the following files in a text editor and update the file paths where necessary:
+
+     - `Main.py`: If you need to specify a different path for the Haar Cascade XML file, you can change it by modifying the `face_cascade.load('path_to_haar_face.xml')` line.
+
+     - `face_dataset.py`: Update the `data_folder` variable to specify the folder where you want to store captured face images.
+
+     - `face_train.py`: Modify the `recognizer.write('face_trainer.yml')` line to set the path where the trained model should be saved.
+
+   - Additionally, ensure that the script's dependencies are correctly installed on your system, especially the OpenCV library.
+
+4. Run `Main.py` to start the face recognition system.
+
+5. The system will utilize your webcam to detect and recognize faces in real-time.
+   
 
 ## Training the Model
 If you want to retrain the model or add new faces for recognition, follow these steps:
