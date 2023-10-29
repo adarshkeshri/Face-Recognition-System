@@ -30,7 +30,6 @@ class Ui_Form(object):
         self.Cont.setStyleSheet("color:rgb(255, 255, 255);\n"
                                 "background-color: rgb(132, 132, 132)")
         self.Cont.setObjectName("Cont")
-
         self.Cont.clicked.connect(lambda: face_dataset.dataset(name=self.name_text.text()))
         self.Cont.clicked.connect(lambda: Form.close())
 
