@@ -69,6 +69,10 @@ Before using this system, ensure you have the following installed:
    - `pip install numpy`
    - `pip install os-sys`
    - `pip install PyQt5`
+     ```
+     pip install requests
+
+     ```
 
 5. Run `Main.py` to start the face recognition system.
 
