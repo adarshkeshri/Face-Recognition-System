@@ -65,10 +65,6 @@ Before using this system, ensure you have the following installed:
        `os.chdir('C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/MainCode')`.
 
 4. Before running the scripts, you need to install the necessary libraries. You can do this using `pip`:
-   - `pip install opencv-contrib-python`
-   - `pip install numpy`
-   - `pip install os-sys`
-   - `pip install PyQt5`
      ```
      pip install opencv-contrib-python
      pip install numpy
