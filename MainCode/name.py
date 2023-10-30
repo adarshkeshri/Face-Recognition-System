@@ -42,7 +42,6 @@ class Ui_Form(object):
         self.inp_name.setText(_translate("Form", "Enter Name:"))
         self.Cont.setText(_translate("Form", "Continue"))
 
-
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
