@@ -37,6 +37,5 @@ def face_recog():
                 
         # Display the resulting frame
         cv.imshow('Attendance', frames)
-
         if cv.waitKey(1) & 0xFF == ord('q'):
             break
