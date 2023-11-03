@@ -65,6 +65,7 @@ class Ui_Main(object):
 "color: rgb(255, 255, 255);\n"
 "border-color: rgb(255, 255, 255);")
         self.Recognition.setObjectName("Recognition")
+        
         self.Recognition.clicked.connect(lambda:face_train.train())
         self.Recognition.clicked.connect(lambda:face_recog.face_recog())
 
