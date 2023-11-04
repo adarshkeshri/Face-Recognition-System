@@ -11,6 +11,7 @@ def dataset(name):
             fp.write(name+"\n")
 
     camera = cv.VideoCapture(0)
+    
     count = 0
 
     while count<100:
