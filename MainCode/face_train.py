@@ -5,6 +5,7 @@ import numpy as np
 def train():
     
     names = []
+    
     with open(r'C:/Users/LENOVOr/Desktop/Project/Face-Recognition-System/Dataset/name_list.txt', 'r') as fp:
         for line in fp:
             x = line[:-1]
