@@ -34,6 +34,7 @@ def face_recog():
                 print(f'Label = {people[label]} with a confidence of {confidence}')
                 cv.putText(frames, str(people[label]), (20,20), cv.FONT_HERSHEY_COMPLEX,1.0, (0,255,0), thickness = 2)
                 cv.rectangle(frames, (x,y), (x+w,y+h), (0,255,0), thickness = 1)
+        
         # Display the resulting frame
         cv.imshow('Attendance', frames)
         
