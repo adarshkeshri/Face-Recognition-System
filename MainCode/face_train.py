@@ -29,9 +29,7 @@ def train():
 
                 img_array = cv.imread(img_path)
                 gray = cv.cvtColor(img_array,cv.COLOR_BGR2GRAY)
-
                 faces_rect = haar_cascade.detectMultiScale(gray, scaleFactor = 1.1, minNeighbors = 4)
-
                 for (x,y,w,h) in faces_rect:
                     faces_roi = gray[y:y+h, x:x+w]
                     features.append(faces_roi)
