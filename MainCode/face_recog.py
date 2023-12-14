@@ -36,7 +36,7 @@ def face_recog():
                 cv.rectangle(frames, (x,y), (x+w,y+h), (0,255,0), thickness = 1)
                 
         # Display the resulting frame
-        cv.imshow('Attendance', frames)
+        cv.imshow('Recognition Window', frames)
         
         if cv.waitKey(1) & 0xFF == ord('q'):
             break
