@@ -6,8 +6,6 @@
 
 A real-time Face Recognition System implemented in Python using OpenCV and Haar Cascade files.
 
-![Face Recognition System](https://user-images.githubusercontent.com/70345708/94707645-bd0a8e80-0344-11eb-82b7-2350f2ef4f8d.jpg)
-
 ## Table of Contents
 - [About](#about)
 - [Repository Files](#repository-files)
